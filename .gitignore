@@ -1,39 +1,27 @@
-# Ignore everything
-*
-# But keep directories
-!*/
-
-# Keep Source files
-!*.cpp
-!*.c
-!*.cc
-!*.h
-!*.hpp
-!*.py
-!*.sh
-!*.js
-!*.ts
-!*.json
-!*.java
-
-# Keep Documentation and Config
-!*.md
-!*.txt
-!*.gitignore
-!LICENSE
-!Makefile
-
-# Keep Input/Output samples if needed (often used in algo contests)
-!*.in
-!*.out
-!*.ans
-!*.inp
-
-# Explicitly ignore common binary/build folders/files again just in case
-build/
-bin/
-*.exe
+# Compiled Object files
 *.o
 *.obj
+
+# Compiled Binary files (Linux/Mac)
+*.out
+*.app
+*.exe
+# Ignore specifically named binaries if possible, or build folders
+build/
+bin/
+Debug/
+Release/
+
+# VS Code
 .vscode/
+
+# OS generated files
 .DS_Store
+Thumbs.db
+
+# Try to match likely binary files (no extension) in specific folders if known, or just rely on user manually not adding them
+# Unfortunately git doesn't have a "no extension" selector easily
+
+# Re-ignore everything inside specific known build output folders if they exist
+*/build/*
+*/bin/*
