@@ -1,33 +1,39 @@
-# Compiled Object files
-*.o
-*.obj
+# Ignore everything
+*
+# But keep directories
+!*/
 
-# Compiled Binary files (Linux/Mac)
-*.out
-*.app
-*.exe
-# 忽略无后缀的二进制文件（常见于算法竞赛编译）
-!*.* 
-# 排除掉有后缀的文件后，剩下的可能是二进制，但也可能是文件夹。
-# 这种规则比较复杂，通用的简单做法是忽略常见构建目录和特定后缀
+# Keep Source files
+!*.cpp
+!*.c
+!*.cc
+!*.h
+!*.hpp
+!*.py
+!*.sh
+!*.js
+!*.ts
+!*.json
+!*.java
 
-# Windows Binary
-*.exe
-*.dll
+# Keep Documentation and Config
+!*.md
+!*.txt
+!*.gitignore
+!LICENSE
+!Makefile
 
-# Build directories
+# Keep Input/Output samples if needed (often used in algo contests)
+!*.in
+!*.out
+!*.ans
+!*.inp
+
+# Explicitly ignore common binary/build folders/files again just in case
 build/
 bin/
-Debug/
-Release/
-
-# VS Code
+*.exe
+*.o
+*.obj
 .vscode/
-
-# OS generated files
 .DS_Store
-Thumbs.db
-
-# 忽略特定生成的二进制文件（根据您的目录结构观察到的模式）
-# 如果您生成的二进制文件都没有后缀，可能需要手动忽略或使用更严格的规则
-# 这里暂时只忽略上述常见的和 build 目录
