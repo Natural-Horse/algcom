@@ -1,3 +1,47 @@
+# Ignore everything by default
+*
+
+# Keep directories so we can unignore files inside them
+!*/
+
+# Keep this .gitignore tracked
+!.gitignore
+
+# Allow common source code files (recursively)
+!**/*.c
+!**/*.cc
+!**/*.cpp
+!**/*.cxx
+!**/*.h
+!**/*.hh
+!**/*.hpp
+!**/*.py
+!**/*.java
+!**/*.kt
+!**/*.kts
+!**/*.go
+!**/*.rs
+!**/*.m
+!**/*.mm
+!**/*.js
+!**/*.ts
+!**/*.jsx
+!**/*.tsx
+!**/*.cs
+!**/*.php
+!**/*.rb
+!**/*.pl
+!**/*.sh
+!**/*.bash
+!**/*.ps1
+!**/*.scala
+!**/*.lua
+!**/*.swift
+
+# Allow common build/source files if you prefer (optional)
+!**/Makefile
+
+# End of .gitignore
 # Compiled Object files
 *.o
 *.obj
